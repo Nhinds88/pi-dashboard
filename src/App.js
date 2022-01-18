@@ -55,7 +55,7 @@ const widgetsConfig = [
   },
   {
     id: "2",
-    header: "Active jobs",
+    header: "Crypto",
     body: <ActiveJobs />,
     active: true,
   },
@@ -143,7 +143,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Jobs Dashboard</h1>
+      <h1>Pi Dashboard - &pi;</h1>
       <div className="k-display-flex">
         <TileLayout
           className="tileLayout"

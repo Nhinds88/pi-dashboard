@@ -6,12 +6,14 @@ html {
   max-width: 70rem;
   margin: 2rem auto;
   background-color: #000;
+  color: #fff;
 }
 
 .activeJobs,
 .jobCredits {
   height: 100%;
   background-color: #000;
+  color: #fff;
 }
 
 .activeJobs,
@@ -24,6 +26,7 @@ html {
   justify-content: center;
   align-items: center;
   background-color: #000;
+  color: #fff;
 }
 
 .jobViewsContainer,
@@ -33,6 +36,7 @@ html {
   border-radius: 50%;
   width: 5rem;
   height: 5rem;
+  color: #fff;
 }
 
 .jobViewsContainer {
@@ -51,6 +55,7 @@ html {
   color: #b45309;
   border: 1px solid #b45309;
   background-color: #000;
+  color: #fff;
 }
 
 .activeJobsNum,
@@ -58,10 +63,12 @@ html {
 .jobCreditsNum {
   font-size: 3rem;
   font-weight: 600;
+  color: #fff;
 }
 
 .jobViewsBlock {
   flex-direction: column;
+  color: #fff;
 }
 
 .jobTitle {
@@ -78,17 +85,21 @@ html {
   grid-template-rows: 1fr 1fr;
   gap: 2rem;
   padding: 0;
+  color: #fff;
 }
 
 .tileLayout {
   width: 100%;
   background-color: #000;
+  color: #fff;
 }
 
 .dashboardAside {
   width: 15rem;
+  color: #fff;
 }
 
 .k-tilelayout-item {
   background-color: #000;
+  color: #fff;
 }
