@@ -170,7 +170,7 @@ const ActiveJobs = props => {
         <div className="activeJobsContainer">
           {/* <p>Safemoon: { trade.sellData.market_data?.current_price.usd }</p> */}
           <div className="top-data">
-            <img src={image?.large} alt={`${name} logo`} />
+            {/* <img src={image?.large} alt={`${name} logo`} /> */}
             <h3 className="crypto-name">{name}</h3>
             <h4 className="crypto-price">
               {formatPrice(marketData?.current_price?.usd)}
