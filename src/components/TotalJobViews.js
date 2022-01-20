@@ -1,22 +1,22 @@
 const jobViews = [
     {
         id: 1, 
-        job: "Full-Stack Developer", 
+        job: "BBC", 
         views: 150,
     },
     {
         id: 2,
-        job: "Mobile Android Developer",
+        job: "Twitter",
         Views: 25,
     },
     {
         id: 3,
-        job: "Javascript Developer", 
+        job: "NPR", 
         views: 69,
     },
     {
         id: 4,
-        job: "Python Developer",
+        job: "???",
         views: 45,
     },
 ];

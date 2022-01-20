@@ -9,7 +9,6 @@ html {
   color: #fff;
 }
 
-.activeJobs,
 .jobCredits {
   height: 100%;
   background-color: #000;
@@ -22,15 +21,11 @@ html {
 .jobViewsBlock,
 .jobCredits,
 .jobCreditsContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #000;
   color: #fff;
 }
 
 .jobViewsContainer,
-.activeJobsContainer,
 .jobCreditsContainer {
   padding: 1rem;
   border-radius: 50%;
@@ -46,7 +41,7 @@ html {
 }
 
 .activeJobsContainer {
-  border: 1px solid #2563eb;
+  line-height: 0.5;
   background-color: #000;
   color: #2563eb;
 }
@@ -58,7 +53,6 @@ html {
   color: #fff;
 }
 
-.activeJobsNum,
 .jobViews,
 .jobCreditsNum {
   font-size: 3rem;

@@ -8,9 +8,6 @@ import MostPopularJob from "./components/MostPopularJob";
 import JobCredits from "./components/JobCredits";
 import { Switch } from "@progress/kendo-react-inputs";
 
-const WidgetOne = () => <div>Widget One</div>;
-const WidgetTwo = () => <div>Widget Two</div>;
-
 const initialPositions = [
   {
     widgetId: "1",
@@ -49,7 +46,7 @@ const getPositions = initialPositions => {
 const widgetsConfig = [
   {
     id: "1",
-    header: "Total jobs views",
+    header: "News",
     body: <TotalJobViews />,
     active: true,
   },
@@ -61,13 +58,13 @@ const widgetsConfig = [
   },
   {
     id: "3",
-    header: "Job Credits",
+    header: "Weather",
     body: <JobCredits />,
     active: true,
   },
   {
     id: "4",
-    header: "Most popular job",
+    header: "Calendar",
     body: <MostPopularJob />,
     active: true,
   },
@@ -93,25 +90,6 @@ function App() {
         ?.active;
     });
   }, [activeWidgets, positions]);
-
-  // const widgets = [
-  //   {
-  //     header: "Total job views",
-  //     body: <TotalJobViews />
-  //   },
-  //   {
-  //     header: "Active jobs",
-  //     body: <ActiveJobs />,
-  //   },
-  //   {
-  //     header: "Job Credits",
-  //     body: <JobCredits />
-  //   },
-  //   {
-  //     header: "Most popular job",
-  //     body: <MostPopularJob />,
-  //   },
-  // ];
 
   const handleReposition = e => {
     setPosition(e.value);
