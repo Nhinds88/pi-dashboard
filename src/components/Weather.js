@@ -1,17 +1,12 @@
 import { useState, useEffect } from 'react';
 
-// import countries from 'i18n-iso-countries';
-
-// countries.registerLocale(require('i18n-iso-countries/langs/en.json'));
 const Weather = props => {
     // State
     const [apiData, setApiData] = useState({});
-    const [getState, setGetState] = useState('piedmont');
-    const [state, setState] = useState('piedmont');
 
     // API KEY AND URL
     const apiKey = process.env.REACT_APP_API_KEY;
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${state}&appid=${apiKey}`;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=piedmont&appid=${apiKey}`;
 
     // Side effect
     useEffect(() => {
@@ -20,14 +15,6 @@ const Weather = props => {
         .then((data) => setApiData(data));
     }, [apiUrl]);
 
-    const inputHandler = (event) => {
-        setGetState(event.target.value);
-    };
-
-    const submitHandler = () => {
-        setState(getState);
-    };
-
     const kelvinToFarenheit = (k) => {
         return (k - 273.15).toFixed(2);
     };
@@ -35,26 +22,6 @@ const Weather = props => {
         <div className="weather">
             <div className="weatherContainer">
                 <div className="container">
-                    <div className="mt-3 d-flex flex-column justify-content-center align-items-center">
-                        <div class="col-auto">
-                            <label for="location-name" class="col-form-label">
-                            Enter Location :
-                            </label>
-                        </div>
-                        <div class="col-auto">
-                            <input
-                            type="text"
-                            id="location-name"
-                            class="form-control"
-                            onChange={inputHandler}
-                            value={getState}
-                            />
-                        </div>
-                        <button className="btn btn-primary mt-2" onClick={submitHandler}>
-                        Search
-                        </button>
-                    </div>
-
                     <div className="card mt-3 mx-auto" style={{ width: '60vw' }}>
                     {apiData.main ? (
                         <div class="card-body text-center">
@@ -93,14 +60,6 @@ const Weather = props => {
                                     {' '}
                                     <strong>{apiData.weather[0].main}</strong>
                                 </p>
-                                {/* <p>
-                                    <strong>
-                                    {' '}
-                                    {countries.getName(apiData.sys.country, 'en', {
-                                        select: 'official',
-                                    })}
-                                    </strong>
-                                </p> */}
                                 </div>
                             </div>
                         </div>
