@@ -1,0 +1,8 @@
+{
+    "clientId": "nhinds1988@gmail.com",
+    "apiKey": "AIzaSyBe0EChkINb2f2wREJSDDsnE7VV2tY6KdE",
+    "scope": "https://www.googleapis.com/auth/calendar",
+    "discoveryDocs": [
+      "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"
+    ]
+  }

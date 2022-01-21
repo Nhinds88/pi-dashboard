@@ -9,24 +9,24 @@ html {
   color: #fff;
 }
 
-.jobCredits {
+.weather {
   height: 100%;
   background-color: #000;
   color: #fff;
 }
 
-.activeJobs,
-.activeJobsContainer,
-.jobViewsContainer,
-.jobViewsBlock,
-.jobCredits,
-.jobCreditsContainer {
+.cryptoPrice,
+.cryptoPriceContainer,
+.newsContainer,
+.newsBlock,
+.weather,
+.weatherContainer {
   background-color: #000;
   color: #fff;
 }
 
-.jobViewsContainer,
-.jobCreditsContainer {
+.newsContainer,
+.weatherContainer {
   padding: 1rem;
   border-radius: 50%;
   width: 5rem;
@@ -34,45 +34,44 @@ html {
   color: #fff;
 }
 
-.jobViewsContainer {
+.newsContainer {
   border: 1px solid #7c3aed;
   background-color: #000;
   color: #7c3aed;
 }
 
-.activeJobsContainer {
+.cryptoPriceContainer {
   line-height: 0.5;
   background-color: #000;
   color: #2563eb;
 }
 
-.jobCreditsContainer {
+.weatherContainer {
   color: #b45309;
   border: 1px solid #b45309;
   background-color: #000;
   color: #fff;
 }
 
-.jobViews,
-.jobCreditsNum {
+.news {
   font-size: 3rem;
   font-weight: 600;
   color: #fff;
 }
 
-.jobViewsBlock {
+.newsBlock {
   flex-direction: column;
   color: #fff;
 }
 
-.jobTitle {
+.newsTitle {
   margin-bottom: 1rem;
   font-weight: 500;
   display: block;
   color: #fff;
 }
 
-.totalJobViewsGrid {
+.newsGrid {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;

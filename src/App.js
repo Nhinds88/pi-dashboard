@@ -2,10 +2,10 @@ import "@progress/kendo-theme-material/dist/all.css";
 import { TileLayout } from "@progress/kendo-react-layout";
 import { useMemo, useState } from "react";
 import './App.css';
-import ActiveJobs from "./components/ActiveJobs";
-import TotalJobViews from "./components/TotalJobViews";
-import MostPopularJob from "./components/MostPopularJob";
-import JobCredits from "./components/JobCredits";
+import CryptoPrice from "./components/CryptoPrice";
+import News from "./components/News";
+import Calendar from "./components/calendar";
+import Weather from "./components/Weather";
 import { Switch } from "@progress/kendo-react-inputs";
 
 const initialPositions = [
@@ -47,25 +47,25 @@ const widgetsConfig = [
   {
     id: "1",
     header: "News",
-    body: <TotalJobViews />,
+    body: <News />,
     active: true,
   },
   {
     id: "2",
     header: "Crypto",
-    body: <ActiveJobs />,
+    body: <CryptoPrice />,
     active: true,
   },
   {
     id: "3",
     header: "Weather",
-    body: <JobCredits />,
+    body: <Weather />,
     active: true,
   },
   {
     id: "4",
     header: "Calendar",
-    body: <MostPopularJob />,
+    body: <Calendar />,
     active: true,
   },
 ];

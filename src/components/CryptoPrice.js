@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const ActiveJobs = props => {
+const CryptoPrice = props => {
   const [safemoonPrice, setSafemoonPrice] = useState([]);
   const [cardanoPrice, setCardanoPrice] = useState([]);
   const [moneroPrice, setMoneroPrice] = useState([]);
@@ -44,8 +44,8 @@ const ActiveJobs = props => {
   }, []);
 
   return (
-    <div className="activeJobs">
-      <div className="activeJobsContainer">
+    <div className="cryptoPrice">
+      <div className="cryptoPriceContainer">
         <div>
           <h3> Safemoon </h3>
         </div>
@@ -69,4 +69,4 @@ const ActiveJobs = props => {
   );
 };
 
-export default ActiveJobs;
+export default CryptoPrice;
