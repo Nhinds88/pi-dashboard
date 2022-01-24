@@ -19,7 +19,7 @@
 //     `
 // };
 
-const calendar = props => {
+const Calendar = props => {
     return (
         <div>
             <div className="k-mb-4">
@@ -38,4 +38,4 @@ const calendar = props => {
     );
 };
 
-export default calendar;
+export default Calendar;

@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import './App.css';
 import CryptoPrice from "./components/CryptoPrice";
 import News from "./components/News";
-import Calendar from "./components/calendar";
+import Calendar from "./components/Calendar";
 import Weather from "./components/Weather";
 import { Switch } from "@progress/kendo-react-inputs";
 

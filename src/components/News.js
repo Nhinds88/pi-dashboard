@@ -1,42 +1,38 @@
-const news = [
-    {
-        id: 1, 
-        site: "BBC", 
-        views: 150,
-    },
-    {
-        id: 2,
-        site: "Twitter",
-        Views: 25,
-    },
-    {
-        id: 3,
-        site: "NPR", 
-        views: 69,
-    },
-    {
-        id: 4,
-        site: "???",
-        views: 45,
-    },
-];
+import React, { useState, useEffect } from 'react';
 
 const News = props => {
+    const [newsHeadline, getNewsHeadline] = useState([]);
+
+    const news_apiKey = process.env.NEWS_API;
+    // const news_apiUrl = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${news_apiKey}`
+    const news_apiUrl = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=8c9e92723c4e42a6876dc527424bd005'
+
+    useEffect(() => {
+          fetch(news_apiUrl)
+          .then((res) => res.json())
+          .then((data) => getNewsHeadline(data.articles));
+      }, [news_apiUrl]);
+    
     return (
         <div>
             <div className="">
                 <ul className="newsGrid">
-                    {news.map((site) => {
-                        return (
-                            <li className="newsBlock" key={site.id}>
-                                <span className="newsTitle">{site.site}</span>
-
-                                <div className="newsContainer">
-                                    <span className="news">{site.views}</span>
-                                </div>
-                            </li>
-                        );
-                    })}
+                    <li className="newsBlock" >
+                        <h4>{ newsHeadline[0].source.name }</h4>
+                        <p>{ newsHeadline[0].title }</p>
+                    </li>
+                    <li className="newsBlock" >
+                        <h4>{ newsHeadline[1].source.name }</h4>
+                        <p>{ newsHeadline[1].title }</p>
+                    </li>
+                    <li className="newsBlock" >
+                        <h4>{ newsHeadline[2].source.name }</h4>
+                        <p>{ newsHeadline[2].title }</p>
+                    </li>
+                    <li className="newsBlock" >
+                        <h4>{ newsHeadline[3].source.name }</h4>
+                        <p>{ newsHeadline[3].title }</p>
+                    </li>
                 </ul>
             </div>
         </div>
