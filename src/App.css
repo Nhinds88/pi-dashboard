@@ -28,14 +28,12 @@ html {
 .newsContainer,
 .weatherContainer {
   padding: 1rem;
-  border-radius: 50%;
   width: 5rem;
   height: 5rem;
   color: #fff;
 }
 
 .newsContainer {
-  border: 1px solid #7c3aed;
   background-color: #000;
   color: #7c3aed;
 }

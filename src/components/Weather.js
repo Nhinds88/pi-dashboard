@@ -22,7 +22,7 @@ const Weather = props => {
                 <div className="container">
                     <div className="card mt-3 mx-auto" style={{ width: '60vw' }}>
                     {apiData.main ? (
-                        <div class="card-body text-center">
+                        <div className="card-body text-center">
                             <img
                                 src={`http://openweathermap.org/img/w/${apiData.weather[0].icon}.png`}
                                 alt="weather status icon"
@@ -41,7 +41,7 @@ const Weather = props => {
                             <div className="row mt-4">
                                 <div className="col-md-6">
                                 <p>
-                                    <i class="fas fa-temperature-low "></i>{' '}
+                                    <i className="fas fa-temperature-low "></i>{' '}
                                     <strong>
                                     {kelvinToFarenheit(apiData.main.temp_min)}&deg; C
                                     </strong>
