@@ -50,19 +50,19 @@ const CryptoPrice = props => {
           <h3> Safemoon </h3>
         </div>
         <div>
-          <p>${ parseFloat(safemoonPrice).toFixed(6) }</p>
+          <p style={{color: "green", marginLeft: "10%"}}>${ parseFloat(safemoonPrice).toFixed(6) }</p>
         </div>
         <div>
           <h3> Cardano </h3>
         </div>
         <div>
-          <p>${ parseFloat(cardanoPrice).toFixed(6) }</p>
+          <p style={{color: "green", marginLeft: "10%"}}>${ parseFloat(cardanoPrice).toFixed(6) }</p>
         </div>
         <div>
           <h3> Monero </h3>
         </div>
         <div>
-          <p>${ parseFloat(moneroPrice).toFixed(6) }</p>
+          <p style={{color: "green", marginLeft: "10%"}}>${ parseFloat(moneroPrice).toFixed(6) }</p>
         </div>
       </div>
     </div>

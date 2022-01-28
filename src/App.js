@@ -4,35 +4,63 @@ import { useMemo, useState } from "react";
 import './App.css';
 import CryptoPrice from "./components/CryptoPrice";
 import News from "./components/News";
-import Calendar from "./components/Calendar";
+import Tim from "./components/Tim";
 import Weather from "./components/Weather";
 import { Switch } from "@progress/kendo-react-inputs";
+import Polygon from "./components/Polygon";
+import Safemoon from "./components/Safemoon";
+import Oakland from "./components/Oakland";
+import Nasa from "./components/Nasa";
 
 const initialPositions = [
   {
     widgetId: "1",
     col: 1,
     colSpan: 2,
-    rowSpan: 2,
+    rowSpan: 3,
   },
   {
     widgetId: "2",
     col: 3,
     colSpan: 1,
-    rowSpan: 1,
+    rowSpan: 2,
   },
   {
     widgetId: "3",
     col: 4,
     colSpan: 1,
-    rowSpan: 1,
+    rowSpan: 2,
   },
   {
     widgetId: "4",
     col: 3,
     colSpan: 2,
-    rowSpan: 2,
+    rowSpan: 3,
   },
+  {
+    widgetId: "5",
+    col: 1,
+    colSpan: 2,
+    rowSpan:3,
+  },
+  {
+    widgetId: "6",
+    col: 3,
+    colSpan: 2, 
+    rowSpan: 3,
+  },
+  {
+    widgetId: "7",
+    col: 1,
+    colSpan: 2,
+    rowSpan: 3,
+  },
+  {
+    widgetId: "8",
+    col: 3,
+    colSpan: 2,
+    rowSpan:3,
+  }
 ];
 
 const getPositions = initialPositions => {
@@ -64,8 +92,32 @@ const widgetsConfig = [
   },
   {
     id: "4",
-    header: "Calendar",
-    body: <Calendar />,
+    header: "TimTheTatMan",
+    body: <Tim />,
+    active: true,
+  },
+  {
+    id: "5",
+    header: "Polygon",
+    body: <Polygon />,
+    active: true,
+  },
+  {
+    id: "6",
+    header: "Safemoon",
+    body: <Safemoon />,
+    active: true,
+  },
+  {
+    id: "7",
+    header: "NASA",
+    body: <Nasa />,
+    active: true,
+  },
+  {
+    id: "8",
+    header: "Oakland",
+    body: <Oakland />,
     active: true,
   },
 ];
@@ -125,8 +177,8 @@ function App() {
       <div className="k-display-flex">
         <TileLayout
           className="tileLayout"
-          columns={4}
-          rowHeight={255}
+          columns={3}
+          rowHeight={150}
           gap={{ rows: 10, columns: 10 }}
           positions={filteredPositions}
           items={activeWidgets}

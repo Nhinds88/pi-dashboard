@@ -14,7 +14,7 @@ const Weather = props => {
     }, [apiUrl]);
 
     const kelvinToFarenheit = (k) => {
-        return (k - 273.15).toFixed(2);
+        return ((k - 273.15)*(9/5)+32).toFixed(2);
     };
     return (
         <div className="weather">
@@ -30,12 +30,12 @@ const Weather = props => {
                             />
 
                             <p className="h2">
-                                {kelvinToFarenheit(apiData.main.temp)}&deg; C
+                                {kelvinToFarenheit(apiData.main.temp)}&deg; F
                             </p>
 
                             <p className="h5">
                                 <i className="fas fa-map-marker-alt"></i>{' '}
-                                <strong>{apiData.name}</strong>
+                                <strong>Oakland</strong>
                             </p>
 
                             <div className="row mt-4">
@@ -43,13 +43,13 @@ const Weather = props => {
                                 <p>
                                     <i className="fas fa-temperature-low "></i>{' '}
                                     <strong>
-                                    {kelvinToFarenheit(apiData.main.temp_min)}&deg; C
+                                    {kelvinToFarenheit(apiData.main.temp_min)}&deg; F
                                     </strong>
                                 </p>
                                 <p>
                                     <i className="fas fa-temperature-high"></i>{' '}
                                     <strong>
-                                    {kelvinToFarenheit(apiData.main.temp_max)}&deg; C
+                                    {kelvinToFarenheit(apiData.main.temp_max)}&deg; F
                                     </strong>
                                 </p>
                                 </div>

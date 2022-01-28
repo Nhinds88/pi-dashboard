@@ -1,6 +1,6 @@
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
 
-const Calendar = props => {
+const Tim = props => {
     
     return (
         <div>
@@ -8,8 +8,8 @@ const Calendar = props => {
                 <div className="centerContent">
                     <div className="selfCenter spaceBetween standardWidth">
                         <TwitterTimelineEmbed
-                        sourceType="timeline"
-                        id="539487832448843776"
+                        sourceType="profile"
+                        screenName="timthetatman"
                         theme="dark"
                         options={{height: 400}}
                         />
@@ -20,4 +20,4 @@ const Calendar = props => {
     );
 };
 
-export default Calendar;
+export default Tim;
